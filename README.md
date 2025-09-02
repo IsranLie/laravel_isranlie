@@ -1,20 +1,69 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo"></a></p>
-<hr>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-## About Laravel
+## Laravel RS
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Simple hospital management website using laravel
 
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
--   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
--   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
--   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
--   [Robust background job processing](https://laravel.com/docs/queues).
--   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+> give a star if you like it, cheers
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+#### Features
 
-## Learning Laravel
+-   Create, Update, Delete, and Search
+-   Datatables pagination
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### Menus
+
+-   Rumah Sakit
+-   Pasien
+-   User
+
+### Setup Instructions
+
+To get a local copy of the code, clone it using git:
+
+```
+git clone [https://github.com/IsranLie/employee-management.git](https://github.com/IsranLie/laravel_isranlie.git)
+cd laravel_isranlie
+```
+
+Install composer depedencies:
+
+```
+composer install
+```
+
+Setting your database connection on .env
+Copy .env file:
+
+```
+cp .env.example .env
+```
+
+App key:
+
+```
+php artisan key:generate
+```
+
+Migrate database (MySQL) & seeding
+
+```
+php artisan migrate --seed
+```
+
+Run command:
+
+```
+php artisan serve
+```
+
+The website will run on the laravel server `http://127.0.0.1:8000/`
+
+```
+username: admin
+password: password123
+```
+
+### Screen Capture
+<img width="735" height="530" alt="image" src="https://github.com/user-attachments/assets/49316168-19bc-43bb-a6a9-277c2facd45e" />
+<img width="1366" height="972" alt="image" src="https://github.com/user-attachments/assets/35bb0ef5-b317-4bc3-bdb3-a8c29b979c0f" />
