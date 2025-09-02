@@ -230,6 +230,25 @@
             responsive: true,
         });
 
+        // Custom filter by Rumah Sakit
+        $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+            var selectedRS = $("#filter_nama_rs").val();
+            var rsId = $("#pasienTable")
+                .find("tr")
+                .eq(dataIndex + 1)
+                .data("rs");
+
+            if (!selectedRS || selectedRS == rsId) {
+                return true;
+            }
+            return false;
+        });
+
+        // Trigger filter saat select berubah
+        $("#filter_nama_rs").on("change", function () {
+            table.draw();
+        });
+
         // Tambah Pasien
         $("#btnAdd").click(function () {
             $("#pasienModalLabel").text("Tambah Pasien");
